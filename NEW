@@ -1,0 +1,318 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Ui = Instance.new("Frame")
+local Nam = Instance.new("TextLabel")
+local Tab1 = Instance.new("TextButton")
+local Selected = Instance.new("Frame")
+local Tab2 = Instance.new("TextButton")
+local Selected_2 = Instance.new("Frame")
+local Tab3 = Instance.new("TextButton")
+local Selected_3 = Instance.new("Frame")
+local Others = Instance.new("Frame")
+local Counter = Instance.new("TextLabel")
+local Fps = Instance.new("TextLabel")
+local Section = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local TextButton_2 = Instance.new("TextButton")
+local DropDown = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextButton_3 = Instance.new("TextButton")
+local Bodypart = Instance.new("Frame")
+local TextButton_4 = Instance.new("TextButton")
+local TextButton_5 = Instance.new("TextButton")
+local TextButton_6 = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Ui.Name = "Ui"
+Ui.Parent = ScreenGui
+Ui.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Ui.BorderSizePixel = 0
+Ui.Position = UDim2.new(0.174766362, 0, 0.119878605, 0)
+Ui.Size = UDim2.new(0, 586, 0, 515)
+
+Nam.Name = "Nam"
+Nam.Parent = Ui
+Nam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Nam.BackgroundTransparency = 1.000
+Nam.Position = UDim2.new(0.0186577812, 0, 0.0209440347, 0)
+Nam.Size = UDim2.new(0, 201, 0, 48)
+Nam.Font = Enum.Font.GothamSemibold
+Nam.Text = "FROZENWARE"
+Nam.TextColor3 = Color3.fromRGB(255, 255, 255)
+Nam.TextScaled = true
+Nam.TextSize = 14.000
+Nam.TextWrapped = true
+
+Tab1.Name = "Tab1"
+Tab1.Parent = Ui
+Tab1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab1.BackgroundTransparency = 1.000
+Tab1.Position = UDim2.new(0.412608624, 0, 0.0215269718, 0)
+Tab1.Size = UDim2.new(0, 102, 0, 41)
+Tab1.Font = Enum.Font.GothamSemibold
+Tab1.Text = "TAB 1"
+Tab1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab1.TextSize = 28.000
+Tab1.TextWrapped = true
+
+Selected.Name = "Selected"
+Selected.Parent = Tab1
+Selected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selected.Position = UDim2.new(0, 0, 1.0731709, 0)
+Selected.Size = UDim2.new(0, 102, 0, 7)
+
+Tab2.Name = "Tab2"
+Tab2.Parent = Ui
+Tab2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab2.BackgroundTransparency = 1.000
+Tab2.Position = UDim2.new(0.613973796, 0, 0.0215269718, 0)
+Tab2.Size = UDim2.new(0, 102, 0, 41)
+Tab2.Font = Enum.Font.GothamSemibold
+Tab2.Text = "TAB 2"
+Tab2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab2.TextSize = 28.000
+Tab2.TextWrapped = true
+
+Selected_2.Name = "Selected"
+Selected_2.Parent = Tab2
+Selected_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selected_2.Position = UDim2.new(0, 0, 1.0731709, 0)
+Selected_2.Size = UDim2.new(0, 102, 0, 7)
+
+Tab3.Name = "Tab3"
+Tab3.Parent = Ui
+Tab3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tab3.BackgroundTransparency = 1.000
+Tab3.Position = UDim2.new(0.808513045, 0, 0.0215269718, 0)
+Tab3.Size = UDim2.new(0, 102, 0, 41)
+Tab3.Font = Enum.Font.GothamSemibold
+Tab3.Text = "TAB 3"
+Tab3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Tab3.TextSize = 28.000
+Tab3.TextWrapped = true
+
+Selected_3.Name = "Selected"
+Selected_3.Parent = Tab3
+Selected_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Selected_3.Position = UDim2.new(0, 0, 1.0731709, 0)
+Selected_3.Size = UDim2.new(0, 102, 0, 7)
+
+Others.Name = "Others"
+Others.Parent = Ui
+Others.BackgroundColor3 = Color3.fromRGB(27, 27, 27)
+Others.BorderColor3 = Color3.fromRGB(255, 255, 255)
+Others.Position = UDim2.new(0, 0, -0.0524271689, 0)
+Others.Size = UDim2.new(0, 586, 0, 26)
+
+Counter.Name = "Counter"
+Counter.Parent = Others
+Counter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Counter.BackgroundTransparency = 1.000
+Counter.Size = UDim2.new(0, 206, 0, 20)
+Counter.Font = Enum.Font.GothamSemibold
+Counter.Text = "FPS COUNTER:"
+Counter.TextColor3 = Color3.fromRGB(255, 255, 255)
+Counter.TextScaled = true
+Counter.TextSize = 14.000
+Counter.TextWrapped = true
+
+Fps.Name = "Fps"
+Fps.Parent = Counter
+Fps.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fps.BackgroundTransparency = 1.000
+Fps.Position = UDim2.new(0.825242698, 0, -0.150000006, 0)
+Fps.Size = UDim2.new(0, 137, 0, 26)
+Fps.Font = Enum.Font.GothamSemibold
+Fps.Text = "0"
+Fps.TextColor3 = Color3.fromRGB(255, 255, 255)
+Fps.TextScaled = true
+Fps.TextSize = 14.000
+Fps.TextWrapped = true
+
+Section.Name = "Section"
+Section.Parent = Others
+Section.BackgroundColor3 = Color3.fromRGB(29, 29, 29)
+Section.BorderSizePixel = 0
+Section.Position = UDim2.new(0.0170648471, 0, 3.99999976, 0)
+Section.Size = UDim2.new(0, 565, 0, 422)
+
+TextButton.Parent = Section
+TextButton.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+TextButton.BorderSizePixel = 0
+TextButton.Size = UDim2.new(0, 565, 0, 45)
+TextButton.Font = Enum.Font.GothamSemibold
+TextButton.Text = "ENABLE"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 24.000
+TextButton.TextXAlignment = Enum.TextXAlignment.Left
+
+TextButton_2.Parent = Section
+TextButton_2.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+TextButton_2.BorderSizePixel = 0
+TextButton_2.Position = UDim2.new(0, 0, 0.125592411, 0)
+TextButton_2.Size = UDim2.new(0, 565, 0, 45)
+TextButton_2.Font = Enum.Font.GothamSemibold
+TextButton_2.Text = "Auto Prediction"
+TextButton_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_2.TextSize = 24.000
+TextButton_2.TextXAlignment = Enum.TextXAlignment.Left
+
+DropDown.Name = "DropDown"
+DropDown.Parent = Section
+DropDown.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+DropDown.BorderSizePixel = 0
+DropDown.Position = UDim2.new(0, 0, 0.253554493, 0)
+DropDown.Size = UDim2.new(0, 565, 0, 43)
+
+TextLabel.Parent = DropDown
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.0672566444, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 187, 0, 43)
+TextLabel.Font = Enum.Font.GothamSemibold
+TextLabel.Text = "AIM AT"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 30.000
+TextLabel.TextWrapped = true
+
+TextButton_3.Parent = DropDown
+TextButton_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_3.BackgroundTransparency = 1.000
+TextButton_3.Position = UDim2.new(0.819469035, 0, 0, 0)
+TextButton_3.Size = UDim2.new(0, 102, 0, 43)
+TextButton_3.Font = Enum.Font.GothamSemibold
+TextButton_3.Text = "V"
+TextButton_3.TextColor3 = Color3.fromRGB(252, 252, 252)
+TextButton_3.TextScaled = true
+TextButton_3.TextSize = 14.000
+TextButton_3.TextWrapped = true
+
+Bodypart.Name = "Bodypart"
+Bodypart.Parent = DropDown
+Bodypart.BackgroundColor3 = Color3.fromRGB(85, 85, 85)
+Bodypart.Position = UDim2.new(0, 0, 1, 0)
+Bodypart.Size = UDim2.new(0, 565, 0, 108)
+Bodypart.Visible = false
+
+TextButton_4.Parent = Bodypart
+TextButton_4.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_4.BorderSizePixel = 0
+TextButton_4.Position = UDim2.new(0, 0, -0.0033333376, 0)
+TextButton_4.Size = UDim2.new(0, 565, 0, 31)
+TextButton_4.Font = Enum.Font.GothamSemibold
+TextButton_4.Text = "HEAD"
+TextButton_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_4.TextSize = 50.000
+TextButton_4.TextWrapped = true
+
+TextButton_5.Parent = Bodypart
+TextButton_5.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_5.BorderSizePixel = 0
+TextButton_5.Position = UDim2.new(0, 0, 0.35177657, 0)
+TextButton_5.Size = UDim2.new(0, 565, 0, 31)
+TextButton_5.Font = Enum.Font.GothamSemibold
+TextButton_5.Text = "TORSO"
+TextButton_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_5.TextSize = 50.000
+TextButton_5.TextWrapped = true
+
+TextButton_6.Parent = Bodypart
+TextButton_6.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton_6.BorderSizePixel = 0
+TextButton_6.Position = UDim2.new(0, 0, 0.710075736, 0)
+TextButton_6.Size = UDim2.new(0, 565, 0, 31)
+TextButton_6.Font = Enum.Font.GothamSemibold
+TextButton_6.Text = "LOWER TORSO"
+TextButton_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton_6.TextSize = 50.000
+TextButton_6.TextWrapped = true
+
+-- Scripts:
+
+local function PQQDJBB_fake_script() -- Counter.LocalScript 
+	local script = Instance.new('LocalScript', Counter)
+
+	local services = {
+		["run_service"] = game:GetService("RunService"),
+	}
+	
+	local gui = script.Parent
+	local fps_label = gui:WaitForChild("Fps")
+	local update_rate = gui:WaitForChild("update_rate").Value
+	update_rate = (update_rate < 0.25 or update_rate > 2) and 1 or update_rate
+	
+	local frames_rendered = 0
+	local last_update = tick() - update_rate
+	local multiplier = 1 / update_rate
+	services["run_service"].RenderStepped:Connect(
+		function()
+			if tick() - last_update >= update_rate then
+				fps_label.Text = tostring(math.round(frames_rendered * multiplier)).. " FPS"
+				frames_rendered = 0; last_update = tick()
+			else
+				frames_rendered += 1
+			end
+		end
+	)
+end
+coroutine.wrap(PQQDJBB_fake_script)()
+local function AZZGNC_fake_script() -- TextButton_3.Script 
+	local script = Instance.new('Script', TextButton_3)
+
+	script.Parent.MouseButton1Click:connect(function()
+		script.Parent.Parent.Bodypart.Visible = not script.Parent.Parent.Bodypart.Visible
+	end)
+	
+end
+coroutine.wrap(AZZGNC_fake_script)()
+local function IVYWJTL_fake_script() -- Ui.LocalScript 
+	local script = Instance.new('LocalScript', Ui)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(IVYWJTL_fake_script)()
